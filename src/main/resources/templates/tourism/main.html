@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TouristSpot Info</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+    <script src="/resource/js/main.js"></script>
+</head>
+<body>
+<div>
+  <span class="text-4xl font-bold">
+    지역별 관광지와 날씨 정보
+  </span>
+</div>
+
+<div class="flex space-x-4">
+    <div class="flex items-center space-x-2">
+        <select id="city-select"
+                class="p-2 border border-gray-300 rounded bg-white">
+            <option value="">시/도 선택</option>
+        </select>
+    </div>
+    <div>
+        <button id="search-button" class="p-2 border border-gray-300 rounded bg-white">
+            검색
+        </button>
+    </div>
+</div>
+
+<!-- 결과 영역 -->
+<div id="weather_result" class="mt-4 p-4 border border-gray-300 rounded bg-gray-50">
+
+</div>
+<div id="tourism_result" class="mt-4 p-4 border border-gray-300 rounded bg-gray-50">
+
+</div>
+
+
+</body>
+</html>
